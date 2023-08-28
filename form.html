@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ed96c4ca40.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Google Form</title>
+</head>
+<body>
+    <div class="form">
+        <div class="title-div">
+            <h1>Assignment Task</h1>
+            <p>The name and photo associated with your Google Account will be recorded when you upload files and submit this form. Your email address is not part of your response.</p>
+            <p class="required">* Indicates required question</p>
+        </div>
+    
+        <div class="mcq-div">
+              <div class="question-title">MCQ<span class="required"> *</span></div>
+              <div class="answer">
+                <input type="radio" id="option1">
+                <label for="option1">option1</label><br>
+                <input type="radio" class="option2" id="option2">
+                <label for="option2" class="option2">option2</label><br>
+                <input type="radio" id="option3">
+                <label for="option3">option3</label> 
+              </div> 
+        </div>
+        <div class="checkbox-div">
+            <div class="question-title">Checkbox<span class="required"> *</span></div>
+            <div class="answer">
+                <input type="checkbox" id="option01">
+                <label for="option01">option1</label><br>
+                <input type="checkbox" class="option2" id="option02">
+                <label for="option02" class="option2">option2</label><br>
+                <input type="checkbox" id="option03">
+                <label for="option03">option3</label>
+            </div> 
+        </div>
+    
+        <div class="short-answer-div">
+                <div class="question-title">Short Answer<span class="required"> *</span></div>
+                <div class="answer"><input class="blank" type="input" name="answer" placeholder="Your answer"></div>
+        </div>
+    
+        <div class="paragraph-div">
+            <div class="question-title">Paragraph<span class="required"> *</span></div>
+            <div class="answer"><input class="blank" type="input" name="answer" placeholder="Your answer"></div>
+        </div>
+        <div class="dropdown-div">
+            <div class="question-title">Drop Down<span class="required"> *</span></div>
+            <select class="answer down">
+                <option>Choose</option>
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+            </select>     
+        </div>
+        <div class="upload-div">
+            <label class="question-title">Upload File<span class="required"> *</span></label><br>
+            <div class="answer">
+                <input type="file" class="file"/><br>
+                <button type="button" name="button" class="add-file"><i class="fa fa-upload"></i> Add File</button>
+            </div>
+        </div>
+        <div class="scale-div">
+            <div class="question-title">Linear Scale<span class="required"> *</span></div><br>
+            <table class="answer">
+                <tr>
+                    <th class="scale"></th>
+                    <th class="scale" for="rate1">1</th>
+                    <th class="scale" for="rate2">2</th>
+                    <th class="scale" for="rate3">3</th>
+                    <th class="scale" for="rate3">4</th>
+                    <th class="scale" for="rate3">5</th>
+                    <th class="scale"></th>
+                </tr>
+                <tr>
+                    <td class="scale">Worst</td>
+                    <td class="scale"><input type="radio" id="rate1"></td>
+                    <td class="scale"><input type="radio" id="rate2"></td>
+                    <td class="scale"><input type="radio" id="rate3"></td>
+                    <td class="scale"><input type="radio" id="rate4"></td>
+                    <td class="scale"><input type="radio" id="rate5"></td>
+                    <td class="scale">Best</td>
+                </tr>    
+            </table>
+        </div>
+        <div class="multi-div">
+             <div class="question-title">Multi Choice Grid<span class="required"> *</span></div><br>
+             <table class="answer">
+                <tr>
+                    <td class="headgrid"></td>
+                    <td class="headgrid">Column 1</td>
+                    <td class="headgrid">Column 2</td>
+                    <td class="headgrid">Column 3</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td class="grid"><input type="radio" id="radio-grid11"></td>
+                    <td class="grid"><input type="radio" id="radio-grid12"></td>
+                    <td class="grid"><input type="radio" id="radio-grid13"></td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td class="grid"><input type="radio" id="radio-grid21"></td>
+                    <td class="grid"><input type="radio" id="radio-grid22"></td>
+                    <td class="grid"><input type="radio" id="radio-grid23"></td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td class="grid"><input type="radio" id="radio-grid31"></td>
+                    <td class="grid"><input type="radio" id="radio-grid32"></td>
+                    <td class="grid"><input type="radio" id="radio-grid33"></td>
+                </tr>
+             </table>
+        </div>
+        <div class="tick-div">
+            <div class="question-title">Tick Box Grid<span class="required"> *</span></div><br>
+            <table class="answer">
+               <tr>
+                   <td></td>
+                   <td class="headgrid">Column 1</td>
+                   <td class="headgrid">Column 2</td>
+                   <td class="headgrid">Column 3</td>
+               </tr>
+               <tr>
+                   <td>Row 1</td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid11"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid12"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid13"></td>
+               </tr>
+               <tr>
+                   <td>Row 2</td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid21"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid22"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid23"></td>
+               </tr>
+               <tr>
+                   <td>Row 3</td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid31"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid32"></td>
+                   <td class="grid"><input type="checkbox" id="checkbox-grid33"></td>
+               </tr>
+            </table>
+       </div>
+       <div>
+          <input class="btn" type="submit">
+       </div>
+       <div class="disclaimer">
+        <p class="never">Never submit passwords through Google Forms.</p>
+        <p class="term">This content is neither created nor endorsed by Google. <u>Report Abuse</u> - <u>Terms of Service</u> - <u>Privacy Policy</u></p>   
+        <h2><b>Google </b>Forms</h2>
+       </div>
+        
+    </div>
+    
+    
+</body>
+</html>
